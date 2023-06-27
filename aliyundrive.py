@@ -31,11 +31,11 @@ class Aliyundrive:
             flag, signin_count, message = self._check_in(access_token)
             if not flag:
                 return handle_error(f'check_in error: {message}')
-            
+            """
             flag, message = self._get_reward(access_token, signin_count)
             if not flag:
                 return handle_error(f'get_reward error: {message}')
-            
+            """
             info.success = True
             info.user_name = user_name
             info.signin_count = signin_count
